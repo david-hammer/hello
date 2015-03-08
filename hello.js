@@ -10,7 +10,7 @@ var sayHello = function(n, name) {
 
 var makeHello = function(name) {
   return function(n){
-    for (var i = 1; i < n; i++){
+    for (var i = 0; i < n; i++){
       hello(name + '!!!');
     }
   };
