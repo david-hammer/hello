@@ -7,3 +7,11 @@ var sayHello = function(n, name) {
     hello(name + '!!!');
   }
 };
+
+var makeHello = function(name) {
+  return function(n){
+    for (var i = 1; i < n; i++){
+      hello(name + '!!!');
+    }
+  };
+};
